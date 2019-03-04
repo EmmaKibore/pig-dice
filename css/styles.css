@@ -1,0 +1,19 @@
+div#firstPlayer {
+  font-weight: bold;
+  font-size-adjust: auto;
+  text-align: center;
+  color: darkgreen
+}
+.dice:hover {
+  cursor: pointer;
+}
+div#secondPlayer {
+  font-weight: bold;
+  font-size-adjust: auto;
+  text-align: centre;
+  color:darkgreen
+}
+h1{
+  color:darkgreen
+  font-weight:bolder;
+}
