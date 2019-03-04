@@ -1,65 +1,69 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>pig-dice game</title>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery/jquery-3.3.1.js"></script>
-  <script src="js/script.js"></script>
-</head>
-<body>
-  <div class = "start-menu container">
+<html lang="en" dir="ltr">
+  <head>
+  <link href="CSS/bootstrap.css" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" href="CSS/styles.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
 
-    <br>
-    <div class = "jumbotron">
-      <h1>Pig-Dice!</h1>
-      <img src="dice4.jpg">
-      <form id = "firstPlayer">
-        <div class="form-group">
-          <label for = "firstPlayer">firstPlayer Name:</label>
-          <input required class = "firstPlayer Name form-control" type="text">
-        </div>
-      </form>
+      <div class="container">
+        <div class="jumbotron">
+           <img src="CSS/dice4.jpg" alt="" width="300" height"133.2">
+          <h1>Let's play Pig Dice!</h1>
+            <form id="player-1">
+              <div class="form-group">
+                <label for="player1Name">Player 1 Name:</label>
+                <input required class="player1Name form-control" type="text">
+              </div>
+            </form>
+            <form id="player-2">
+              <div class="form-group">
+                <label for="player2Name">Player 2 Name:</label>
+                <input required class="player2Name form-control" type="text">
+              </div>
+            </form>
+            <button id="start" class="btn-info btn">Start</button>
 
-      <br><br>
-      <form id = "secondPlayer">
-        <div class = "form-group">
-          <label for = "secondPlayer">secondPlayer Name:</label>
-          <input required class = "secondPlayer Name form-control" type="text">
-        </div>
-      </form>
-      <button id ="start" class ="btn-info btn">Start</button>
-    </div>
-  </div>
-  <br><br>
+      <!-- <div class="player-console container"> -->
+     </div>
 
-  <div class ="player-console container">
-    <button id ="new game" class ="btn-success btn">NEW GAME</button>
-    <div class ="row">
-      <div class ="col-md-6">
-        <h2>firstPlayer: <span id ="secondPlayer Name"><span></h2>
-          <button id ="firstPlayer-roll" class ="btn-success btn">Roll</button>
-          <button id ="firstPlayer-hold" class ="btn-success btn">Hold</button>
-          <h2>Dice Roll: <span id="die-roll-1"></span></h2>
-          <p>Round Total: <span id="round-total-1"></span></p>
-          <p>Total score: <span id="total score-1"></span></p>
-        </div>
-        <br><br>
 
-        <div class ="col-md-6">
-          <h2>secondPlayer: <span id ="secondPlayer"></span></h2>
-          <button id ="secondPlayer-roll" class="btn-success btn">Roll</button>
-          <button id ="secondPlayer-hold" class="btn-success btn">Hold</button>
-          <h2>Dice Roll: <span id ="die-roll-2"></span></h2>
-          <p>Round Total: <span id ="round total-2"></span></p>
-          <p>Total score: <span id ="total-score-2"></span></p>
+    <div class = "row">
+
+      <div class="col-md-6">
+        <div id="touch">
+          <b>player1</b>
+          <button type="button" onclick="tri()" id="hold">hold</button>
+          <button type="button"  onclick="randomMath()">Roll</button>
         </div>
+
+
+        <h2>Dice Roll:  <br><div id="player-1-round"></br> <span id="die-roll-1"></span></h2>
+        <p>Round Total: <span id="round-total-1"></span></p>
       </div>
-    </div>
-    <br><br>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+
+ <div class="col-md-6">
+
+   <div id="touch">
+       <b>player2</b>
+     <button type="button" onclick="tri()" id="hold">hold</button>
+     <button type="button" onclick="randomMathP2()">Roll</button>
+   </div>
+
+
+             <h2>Dice Roll: <br><div id="player-2-round"></br> <span id="die-roll-2"></span></h2>
+             <p>Round Total: <span id="round-total-2"></span></p>
+         </div>
+
+
+
+            <script src="js/jquery-3.3.1.js"></script>
+            <script src="js/script.js"></script>
+
+
+      </div>
   </body>
-  </html>
+</html>
