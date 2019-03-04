@@ -1,9 +1,4 @@
 //business logic
-$(document).ready(function(){
- $(".doIt").button(function(event){
-   event.preventDefault();
-   var tri=function(){
- });
 var firstPlayer = "";
 var secondPlayer = "";
 var dice = [1,2,3,4,5,6]
@@ -14,7 +9,7 @@ var throwdice = function () {
 
 function player(turn) {
   this.roll = 0;
-  this.tempscore = 0;
+  this.roundscore = 0;
   this.totalscore = 0;
   this.turn = turn;
   this.playerName;
@@ -22,21 +17,20 @@ function player(turn) {
 //checking for firstPlayer
 player.prototype.rollone = function() {
   if (this.roll === 1) {
-    this.tempscore = 0;
+    this.roundscore = 0;
     alert("sorry " + this.firstPlayerName + ", your turn is over sucker!")
 
   } else {
-    this.tempscore += this.roll;
+    this.roundscore += this.roll;
   }
 }
 // Hold
 player.prototype.hold =function () {
-  this.totalscore += this.tempscore
-  this.tempscore = 0;
+  this.totalscore += this.roundscore
+  this.roundscore = 0;
   //this.changeturn();
   alert(this.firstPlayerName + ",your turn is over,next player!");
   }
-}
 //check for 100
 firstPlayer.prototype.winnerCheck = function () {
   if (this.totalscore >= 100) {
@@ -45,7 +39,8 @@ firstPlayer.prototype.winnerCheck = function () {
 }
 player.prototype.newGame = function () {
   this.roll = 0;
-  this.tempscore = 0;
+  this.roundscore = 0;
   this.totalscore = 0;
   this.firstPlayer = "";
 }
+};

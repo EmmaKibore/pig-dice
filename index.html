@@ -5,8 +5,8 @@
   <title>pig-dice game</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/scripts.js"></script>
-  <img src="img_dice4.jpg" alt="a die image">
+  <script src="js/jquery/jquery-3.3.1.js"></script>
+  <script src="js/script.js"></script>
 </head>
 <body>
   <div class = "start-menu container">
@@ -14,6 +14,7 @@
     <br>
     <div class = "jumbotron">
       <h1>Pig-Dice!</h1>
+      <img src="dice4.jpg">
       <form id = "firstPlayer">
         <div class="form-group">
           <label for = "firstPlayer">firstPlayer Name:</label>
@@ -25,7 +26,7 @@
       <form id = "secondPlayer">
         <div class = "form-group">
           <label for = "secondPlayer">secondPlayer Name:</label>
-          <input required class = "secondPlayer Name:</label">
+          <input required class = "secondPlayer Name form-control" type="text">
         </div>
       </form>
       <button id ="start" class ="btn-info btn">Start</button>

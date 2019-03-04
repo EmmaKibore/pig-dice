@@ -11,11 +11,15 @@ div#secondPlayer {
   font-weight: bold;
   font-size-adjust: auto;
   text-align: centre;
-  color:darkgreen
+  color:purple
 }
 h1{
-  color:darkgreen
+  color:silver
   font-weight:bolder;
+}
+.jumbotron{
+  background-color: silver
+  border-radius: 16px;
 }
 .menu{
   grid-row: 3;
