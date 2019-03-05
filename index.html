@@ -11,22 +11,22 @@
       <div class="container">
         <div class="jumbotron">
           <div class="row">
-            <div class="column">
-          <img src="dice1.jpg" alt="dice1" width="1000" height="450">
+            <div class="col-md-6">
+          <img src="dice1.jpg" alt="dice1" width="550" height="460">
         </div>
-        <div class="column">
-          <img src="dice2.jpg" alt="dice2" width="1000" height="450">
+        <div class="col-md-6">
+          <img src="dice2.jpg" alt="dice2" width="550" height="460">
         </div>
           <h1>Let's play Pig Dice!</h1>
-            <form id="player-1">
+            <form id="player1">
               <div class="form-group">
-                <label for="player1Name">Player 1 Name:</label>
+                <label for="player1Name">Player1 Name:</label>
                 <input required class="player1Name form-control" type="text">
               </div>
             </form>
-            <form id="player-2">
+            <form id="player2">
               <div class="form-group">
-                <label for="player2Name">Player 2 Name:</label>
+                <label for="player2Name">Player2 Name:</label>
                 <input required class="player2Name form-control" type="text">
               </div>
             </form>
@@ -41,7 +41,7 @@
       <div class="col-md-6">
         <div id="touch">
           <b>player1</b>
-          <button type="button" onclick="tri()" id="hold">hold</button>
+          <button type="button" onclick="randomMath" id="hold">hold</button>
           <button type="button"  onclick="randomMath()">Roll</button>
         </div>
 
@@ -55,7 +55,7 @@
 
    <div id="touch">
        <b>player2</b>
-     <button type="button" onclick="tri()" id="hold">hold</button>
+     <button type="button" onclick="randomMathP2()" id="hold">hold</button>
      <button type="button" onclick="randomMathP2()">Roll</button>
    </div>
 
