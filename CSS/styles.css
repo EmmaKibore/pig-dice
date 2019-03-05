@@ -2,10 +2,10 @@
   text-align: center;
 }
 body{
-  background-image:url("back2.jpg");
+  background-image:url("back3.jpg");
 }
 .container{
-  background-color: violet;
+  background-color: magenta;
 }
 img{
   display:block;
@@ -19,5 +19,17 @@ button{
   color: #maroon;
 }
 h1{
-  color:violet;
+  color:black;
+}
+body{
+  background-color: pink;
+}
+#player1{
+  color:darkred;
+}
+#player2{
+  color:darkred;
+}
+h2{
+  color:darkred;
 }
